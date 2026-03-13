@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Booth | Portfolio</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #1e293b;
+            --accent: #38bdf8;
+            --text: #f8fafc;
+        }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+            line-height: 1.6;
+        }
+        header {
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)), 
+                        url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+            text-align: center;
+        }
+        .container { max-width: 900px; margin: auto; padding: 2rem; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .card {
+            background: var(--card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-bottom: 4px solid var(--accent);
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: translateY(-5px); }
+        h1 { font-size: 3rem; margin-bottom: 0; }
+        .tag { color: var(--accent); font-weight: bold; }
+        footer { text-align: center; padding: 3rem; font-size: 0.9rem; opacity: 0.7; }
+        a { color: var(--accent); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>James Booth 🏔️</h1>
+    <p>AI Infrastructure | Thermal Systems | Creative Design</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Work & Projects 🛠️</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Thermal Engineering</h3>
+                <p>Specializing in liquid cooling solutions and high-density compute infrastructure.</p>
+                <span class="tag">#Accelsius #HPC</span>
+            </div>
+            <div class="card">
+                <h3>Digital Art Shop</h3>
+                <p>Curating and creating unique digital assets for the modern creator.</p>
+                <span class="tag">#Etsy #Design</span>
+            </div>
+            <div class="card">
+                <h3>Systems & Networks</h3>
+                <p>Performance tuning for Linux environments and RDMA/TCP networking.</p>
+                <span class="tag">#Linux #DevOps</span>
+            </div>
+        </div>
+    </section>
+
+    <section style="margin-top: 4rem;">
+        <h2>Connect 🔗</h2>
+        <p>Looking to collaborate on cooling tech or creative projects? Reach out via <a href="#">LinkedIn</a> or check out my shop.</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2026 James Booth. Built with precision in Denver. 📍</p>
+</footer>
+
+</body>
+</html>
